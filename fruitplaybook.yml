@@ -1,0 +1,12 @@
+---
+
+- name: Network Getting Started First Playbook
+  hosts: localhost
+  connection: local
+  vars:
+    fruit: "apple"
+  tasks:
+
+    - name: "print extra vars"
+      debug:
+        msg: "The fruit is {{ fruit }}"
