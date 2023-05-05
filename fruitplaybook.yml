@@ -2,6 +2,9 @@
 
 - name: Network Getting Started First Playbook
   hosts: all
+  become: yes
+  become_method: sudo
+  gather_facts: yes
     vars:
     fruit: "apple"
   tasks:
