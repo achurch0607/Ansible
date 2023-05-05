@@ -12,13 +12,3 @@
     - name: "print extra vars"
       debug:
         msg: "The fruit is {{ fruit }}"
-
-
-git init
-git commit -m "first playbook"
-git branch -M main
-git remote add origin https://github.com/achurch0607/Ansible.git
-git push -u origin main
-
-
-git@github.com:bertramdev/morpheus-ansible.git
