@@ -11,5 +11,4 @@
 
     - name: "print extra vars"
       ansible.builtin.debug:
-        msg: 
-          - "The fruit is {{ fruit }}"
+        msg: "The fruit is {{ fruit }}"
