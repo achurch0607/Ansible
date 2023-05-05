@@ -10,5 +10,6 @@
   tasks:
 
     - name: "print extra vars"
-      ansible.builtin.debug:
-        msg: "The fruit is {{ fruit }}"
+      debug:
+        msg: 
+          - "The fruit is {{ fruit }}"
