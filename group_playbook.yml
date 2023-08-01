@@ -1,7 +1,7 @@
 ---
 - hosts:
-  - ac-stg-acopenstack-ubuntu-2
-  - ac-stg-acopenstack-ubuntu-1
+  - ansible_group
+  - new_ansible_group
   gather_facts: true
 
   tasks:
