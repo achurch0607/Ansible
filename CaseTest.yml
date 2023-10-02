@@ -1,0 +1,14 @@
+---
+- name: CaseTest
+  hosts: all
+  become: true
+  become_user: root
+  become_method: sudo
+  tasks:
+    - meta: end_play
+      when:  ansible_hostname == "ldap"
+      ignore_errors: true
+
+    - name: set --> FQDN
+      hostname:
+        name: "{{inventory_hostname}}"
