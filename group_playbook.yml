@@ -1,8 +1,0 @@
----
-- hosts:
-  - ansible_group
-  gather_facts: true
-
-  tasks:
-   - name: Echo something
-     shell: echo "This is an example of an Ansible playbook"
